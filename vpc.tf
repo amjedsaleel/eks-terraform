@@ -18,8 +18,8 @@ module "vpc" {
 
   tags = {
     "kubernetes.io/cluster/${var.eks_cluster}" = "shared"
-    "Env"                                  = "Prod"
-    "Terraform"                            = "true"
+    "Env"                                      = "Prod"
+    "Terraform"                                = "true"
   }
 
   public_subnet_tags = {
